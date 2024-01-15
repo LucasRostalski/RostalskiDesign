@@ -1,0 +1,766 @@
+// Include custom veriables default overrides here
+
+$primary: #7f187f;
+$theme-colors: (
+	"primary": $primary
+	);
+
+// create your own map
+
+$custom-color: (
+	"icon-background": rgba(127,24,127,0.2)
+
+	);
+
+
+//Merge maps
+
+$theme-colors: map-merge($theme-colors, $custom-color);
+
+@import "./bootstrap/scss/bootstrap";
+
+
+
+body{
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+    scroll-behavior: smooth;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: #f7faff;
+	
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background-color: #f7faff;
+    z-index: 999;
+    
+ padding-bottom: 10px;
+
+    //box-shadow: 0px -1px 24px -13px rgba(66, 68, 90, 1);
+}
+
+.page{
+	margin-bottom: 0!important;
+}
+
+.text-danger{
+	color: red;
+}
+
+
+.main-navigation {
+ list-style: none;
+        padding:0;
+        margin: 0;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+ul{
+        list-style: none;
+        padding:0;
+        margin: 0;
+    }
+
+     ul li {
+          display:inline;
+          padding-left: 10px;
+          padding-right: 10px;
+    }
+    ul li a{
+        text-decoration: none;
+        
+        
+    }
+   
+
+ul li a  {
+  --s: 0.1em;   /* the thickness of the line */
+  --c: #2c97df;/* the color */
+  
+  color: #0000;
+  font-size: 1.1rem;
+  padding-bottom: var(--s);
+  background: 
+    linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: 0.5s;
+}
+ul li a:hover {
+  --_p: 100%
+}
+
+
+
+
+}
+
+
+
+   .icon_about{
+    padding-top: 20px;
+        i{
+            font-size: 2.5rem;
+            padding-right: 20px;
+        }
+    }
+
+
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+      padding-top: 120px;
+
+padding-bottom: 30px;
+}
+   #omnie{
+
+    h3{
+    font-weight: 300;
+
+
+
+}
+
+  @media(max-width: 768px){
+
+  h3{
+  text-align: center;
+}
+    
+}
+
+        p{
+             font-weight: 300;
+
+        }
+       
+    }
+
+
+    #realizacje{
+
+    h3{
+        font-weight: 300;
+}
+
+@media(max-width: 768px){
+
+  h3{
+  text-align: center;
+}
+    
+}
+}
+
+
+.omnie_zdjecie{
+img{
+
+    max-height: 600px;
+}
+
+
+     display: flex;
+    justify-content:end;
+}
+.omnie_opis_box{
+    position: relative;
+padding: 1rem;
+
+color: #0a1530;
+}
+.omnie_opis{
+    box-shadow: inset 0 1px 1px 0 hsla(0,0%,100%,.15),0 50px 100px -20px rgba(50,50,93,.3),0 30px 60px -30px rgba(0,0,0,.5),-10px 10px 60px -10px rgba(103,178,111,.3);
+background: #fff;
+border-radius: 1rem;
+padding:50px;
+z-index: 1;
+position: relative;
+  text-align: justify;
+
+
+
+}
+
+@media(max-width: 1024px) {
+
+
+
+.line{
+    font-size: 2.1rem;
+}
+
+.omnie_opis{
+
+    padding:20px;
+}
+
+
+
+
+.omnie_opis:hover{
+    cursor: pointer;
+}
+
+
+
+
+}
+
+
+
+
+
+.omnie_opis:hover{
+    cursor: pointer;
+}
+.omnie_opis_box::before{
+      content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 89%;
+  z-index: 0;
+  height: 89%;
+  border-radius: 1rem;
+  background: linear-gradient(to right bottom,#72c6ef,#004e8f);
+  transform: rotate(4deg);
+  transform-origin: 40% 200%;
+  box-shadow: inset 0 1px 1px 0 hsla(0,0%,100%,.15),0 50px 100px -20px rgba(50,50,93,.3),0 30px 60px -30px rgba(0,0,0,.5),-10px 10px 60px -10px rgba(103,178,111,.3);
+   transition: transform 1s ease 0.3s;
+
+}
+
+
+.omnie_opis_box:hover::before{
+      content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 89%;
+  z-index: 0;
+  height: 89%;
+  border-radius: 1rem;
+  background: linear-gradient(to right bottom,#72c6ef,#004e8f);
+  transform: rotate(0deg);
+  transform-origin: 40% 200%;
+  box-shadow: inset 0 1px 1px 0 hsla(0,0%,100%,.15),0 50px 100px -20px rgba(50,50,93,.3),0 30px 60px -30px rgba(0,0,0,.5),-10px 10px 60px -10px rgba(103,178,111,.3);
+      transition: transform 1s ease 0.3s;
+        cursor: pointer;
+
+}
+
+
+
+@media( max-width: 1200px){
+
+
+.omnie_opis_box::before{
+
+
+
+      content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 89%;
+  z-index: 0;
+  height: 89%;
+  border-radius: 1rem;
+  background: linear-gradient(to right bottom,#72c6ef,#004e8f);
+  transform: rotate(0deg);
+  transform-origin: 40% 200%;
+  box-shadow: inset 0 1px 1px 0 hsla(0,0%,100%,.15),0 50px 100px -20px rgba(50,50,93,.3),0 30px 60px -30px rgba(0,0,0,.5),-10px 10px 60px -10px rgba(103,178,111,.3);
+      transition: transform 1s ease 0.3s;
+        cursor: pointer;
+
+}
+
+
+.omnie_opis_box:hover::before{
+     content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 89%;
+  z-index: 0;
+  height: 89%;
+  border-radius: 1rem;
+  background: linear-gradient(to right bottom,#72c6ef,#004e8f);
+  transform: rotate(0deg);
+  transform-origin: 40% 200%;
+  box-shadow: inset 0 1px 1px 0 hsla(0,0%,100%,.15),0 50px 100px -20px rgba(50,50,93,.3),0 30px 60px -30px rgba(0,0,0,.5),-10px 10px 60px -10px rgba(103,178,111,.3);
+      transition: transform 1s ease 0.3s;
+        cursor: pointer;
+
+}
+
+
+    .omnie_zdjecie{
+        padding-top: 10px;
+    justify-content:center; 
+    display: flex;
+
+
+}
+ #omnie h2{
+    text-align: center;
+}
+
+
+.omnie_zdjecie img{
+    height: 400px;
+    width: auto;
+    margin-bottom: -55px;
+z-index: 1;
+}
+
+
+ .icon_about{
+ padding-top: 20px;
+ text-align: center;
+        i{
+            font-size: 2rem;
+            padding-right: 15px;
+        }
+    }
+
+
+
+}
+
+
+
+ 
+
+.portfolio_name{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-width: 70%;
+    background-color: black;
+    left:0;
+   
+
+
+    h2{
+        position: relative;
+        color: white;
+        font-weight: 300;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 1.5rem;
+    }
+}
+.portfolio{
+display: flex;
+width: 100%;
+  flex-wrap: wrap;
+padding: 10px 10px;
+
+  .portfolio_photo{
+        display: block;
+        width: 100%;
+        position: relative;
+        padding: 10px 10px;
+         height: 450px;
+          overflow: hidden;
+          margin-top: 40px;
+
+
+  transform:
+    perspective(800px)
+    rotateY(-8deg);
+  transition: transform 1s ease 0s;
+  border-radius: 4px;
+  box-shadow:
+    rgba(0, 0, 0, 0.024) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,
+    rgba(0, 0, 0, 0.03) 0px 0px 8px 0px,
+    rgba(0, 0, 0, 0.1) 0px 20px 30px 0px;
+
+  &:hover {
+    transform: perspective(800px) rotateY(-4deg);
+        cursor: pointer;
+  }
+
+
+@media(max-width: 768px){
+
+
+.icon_about {
+
+
+        i {
+  font-size: 2rem;
+  padding-right: 15px;
+}
+}
+
+
+
+
+.fullcap{
+    display: none;
+}
+
+     display: block;
+        width: 100%;
+        position: relative;
+        padding: 10px 10px;
+         height: 350px;
+          overflow: hidden;
+}
+        img{
+            position: relative;
+           height: 500px;
+width: 600px;
+                     
+@media(max-width: 768px){
+     height: 100%;
+         position: relative;
+           
+            object-fit: cover;
+}
+        }
+    }
+
+}
+
+
+
+ 
+
+.fullcap {
+
+box-sizing: border-box;
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+text-align: center;
+padding: 10% 10%;
+background-color: rgba(44,151,223,1);
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+  transition: opacity 0.5s;
+  color: white;
+}
+ 
+
+.fullcap {
+  visibility: none; opacity: 0;
+  transition: opacity 0.5s;
+}
+.fullcap:hover {
+  visibility: visible; opacity: 1;
+}
+
+
+
+  #kontakt{
+  
+    .contact_info{
+        font-size: 1.3rem;
+        font-weight: 300;
+
+        a{
+        text-decoration: none;
+        color: black;
+    }
+        i{
+            padding-right: 5px;
+            font-size: 1.3rem;
+        }
+    }
+  }
+
+
+
+  // Contact form
+
+  /* 
+** Contact Form 7 Styles 
+*/
+
+.wpcf7-form input[type="text"], 
+.wpcf7-form input[type="email"], 
+.wpcf7-form input[type="url"], 
+.wpcf7-form input[type="password"], 
+.wpcf7-form input[type="search"], 
+.wpcf7-form input[type="number"], 
+.wpcf7-form input[type="tel"], 
+.wpcf7-form textarea {
+    color: #1f252b;
+    width: 800px;
+    padding: 12px 16px;
+     outline-offset: 0;
+        background-color: white;
+           border:none;
+}
+
+@media(max-width: 768px){
+    .wpcf7-form input[type="text"], 
+.wpcf7-form input[type="email"], 
+.wpcf7-form input[type="url"], 
+.wpcf7-form input[type="password"], 
+.wpcf7-form input[type="search"], 
+.wpcf7-form input[type="number"], 
+.wpcf7-form input[type="tel"], 
+.wpcf7-form textarea {
+    color: #1f252b;
+    width: 100%;
+    padding: 12px 16px;
+   outline-offset: 0;
+       background-color: white;
+           border:none;
+}
+}
+
+.wpcf7-form p {
+    margin: 0 0 28px;
+}
+
+.wpcf7-text:focus, 
+.wpcf7-textarea:focus {
+    outline: 3px solid rgba(44, 151, 223, 0.9);
+    outline-offset: 0;
+}
+
+div.wpcf7-mail-sent-ok {
+    border: 0;
+    background: #5471de;
+    color: #fff;
+    padding: 18px;
+}
+
+div.wpcf7-acceptance-missing,
+div.wpcf7-validation-errors {
+    border: 0;
+    background: #f9443b;
+    color: #fff;
+    padding: 18px;
+}
+
+span.wpcf7-not-valid-tip {
+    color: #f9443b;
+}
+
+/* 
+** Button Styles 
+*/
+
+.wpcf7-form {
+
+    .button {
+
+    background-color: #2c97df;
+    border: 0;
+    color: #fff;
+    border-radius: 1px;
+    font-weight: 700;
+    text-align: center;
+  
+    margin-bottom: 15px;
+    width: auto;
+    padding: 20px 42px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    
+         transition: 0.5s;
+
+    }
+
+    .button:hover {
+    cursor: pointer;
+    box-shadow: 0px 7px 16px -7px rgba(0, 0, 0, 0.4);
+    border: 0;
+     transition: 0.5s;
+}
+
+}
+
+
+
+.line {
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.line::before {
+  display: inline-block;
+  content: "";
+  background-color: #64c1ff;
+  height: 20px;
+  width: 101%;
+  position: absolute;
+  bottom: -1px;
+  left: -2px;
+  z-index: -1;
+}
+
+
+footer{
+
+    background-color: white;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+
+
+.hover {
+  --s: 0.1em;   /* the thickness of the line */
+  --c: #1095c1; /* the color */
+  
+  color: #0000;
+  padding-bottom: var(--s);
+  background: 
+    linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: 0.5s;
+}
+.hover:hover {
+  --_p: 100%
+}
+
+.active{
+    color: #2c97df;
+}
+
+.main-navigation .active{
+    color: #2c97df;
+    border-bottom: 2px solid #2c97df;
+}
+
+
+
+@media(max-width: 768px){
+    .cursor{
+    display: none;
+}
+
+.site-branding img {
+  width: 180px;
+}
+
+
+}
+
+
+
+
+.cursor {
+    width: 40px;
+    height: 40px;
+    border: 1px solid  #2c97df;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+        z-index: 99999;
+}
+
+.cursor::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border: 8px solid gray;
+    border-radius: 50%;
+    opacity: .5;
+    top: -1px;
+    left: -1px;
+    animation: cursorAnim2 .5s infinite alternate;
+    z-index: 99999;
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+}
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.4);
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.expand {
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid red;
+}
+
+
+
+
+
+.row {
+  --bs-gutter-x: 0rem;
+  --bs-gutter-y: 0;
+}
+
+
+.fancybox__caption {
+  text-align: center;
+}
+
+.btn-outline-danger{
+
+    background-color: rgba(44,151,223,1);
+    
+   color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+    color: rgba(44,151,223,1);
+      text-decoration: underline;
+}
